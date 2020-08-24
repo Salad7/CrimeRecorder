@@ -11,16 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90fbb61b-9596-4063-a378-f5ebf6f270f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_crime_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_item_crime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/Crime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/CrimeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/CrimeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/CrimeLab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/CrimeLab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/CrimeListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/criminalintent/CrimeListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_crime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_crime.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -280,11 +271,18 @@
       <option name="project" value="LOCAL" />
       <updated>1597178789350</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1598240405066</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598240405067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="817" extended-state="0" />
+    <frame x="-1" y="23" width="1440" height="817" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" visible="true" weight="0.25608012" />
       <window_info id="Structure" side_tool="true" />
@@ -309,6 +307,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Assistant" weight="0.3297568" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Preview" weight="0.19957082" />
     </layout>
