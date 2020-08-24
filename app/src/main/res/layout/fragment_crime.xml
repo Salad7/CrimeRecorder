@@ -3,6 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title" />
+
     <EditText
         android:id="@+id/crime_title"
         android:layout_width="match_parent"
@@ -10,4 +16,16 @@
         android:ems="10"
         android:hint="@string/crime_title_hint"
         android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solved" />
 </LinearLayout>
