@@ -50,15 +50,7 @@ public class CrimeListFragment extends Fragment {
             LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
             View v = layoutInflater.inflate(R.layout.list_item_crime, parent, false);
 
-            v.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(getContext(),"Clicked",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(getContext(),CrimeActivity.class);
-//                    intent.putExtra("key",crimes.get())
-                    startActivity(intent);
-                }
-            });
+
 
 
             return new CrimeHolder(v);
@@ -69,6 +61,7 @@ public class CrimeListFragment extends Fragment {
         public void onBindViewHolder(CrimeHolder holder, int position) {
             Crime crime = crimes.get(position);
             holder.bindCrime(crime);
+
 
 
         }
@@ -88,7 +81,17 @@ public class CrimeListFragment extends Fragment {
              title = (TextView) itemView.findViewById(R.id.list_crime_title);
              date = (TextView) itemView.findViewById(R.id.list_crime_date);
              check = (CheckBox) itemView.findViewById(R.id.list_crime_issolved);
+             itemView.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View v) {
+                     Intent intent = new Intent(getContext(),CrimeActivity.class);
+                     intent.putExtra("KEY",title.getText());
+                     startActivity(intent);
+                 }
+             });
         }
+
+
 
         public void bindCrime(Crime c){
             title.setText(c.getTitle());

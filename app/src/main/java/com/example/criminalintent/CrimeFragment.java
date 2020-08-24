@@ -10,10 +10,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import java.util.List;
 
 public class CrimeFragment extends Fragment {
     private Crime mCrime;
@@ -58,6 +61,19 @@ public class CrimeFragment extends Fragment {
         });
         mDateButton.setText(mCrime.getDate().toString());
         mDateButton.setEnabled(false);
+        if(getActivity().getIntent().hasExtra("KEY")){
+            String title = getActivity().getIntent().getStringExtra("KEY");
+            CrimeLab crimeList = CrimeLab.get(getContext());
+            for (Crime item: crimeList.getCrimes()
+            ) {
+                if(item.getTitle().equals(title)){
+                    crimeET.setText(title);
+                    mDateButton.setText(item.getDate().toString());
+                    mSolvedCheckbox.setChecked(item.isSolved());
+                }
+            }
+            Toast.makeText(getContext(),"Found extra",Toast.LENGTH_LONG).show();
+        }
         return v;
     }
 }
